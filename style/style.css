@@ -1,0 +1,937 @@
+/* -----RESETEO----- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul, ol{list-style: none}
+
+a{text-decoration: none;}
+
+/* -----RESETEO----- */
+
+
+/*                  --------------------MOBILE--------------------                    */
+
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+.layout{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 18vh 6vh 89% 6vh 18vh;
+}
+
+/* -----HEADER----- */
+.encabezado{
+    background-color: black;
+    background-size: contain;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.cuerpo{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.encabezado__logo{
+    display: inline-block;
+    width: auto;
+    height: 10vh;
+    margin-top: 1em;
+    margin-left: 1em;
+
+}
+
+.encabezado__titulo{
+    display: inline-block;
+    color: #FBEA39 ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+.encabezado__navBar{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.encabezado__navBar--button{
+    background-color: #FBEA39;
+    border: 2px solid rgb(201, 157, 12);
+    border-radius: 4px;
+    color: black;
+    font-weight: bold;
+    font-size: smaller;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* -----HEADER----- */
+
+/* -----SEPARADOR----- */
+.separador{
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    border-top:5px black solid;
+    border-bottom:5px black solid;
+    gap: 10px;
+}
+
+.separador__imagen{
+    width: 2em;
+    height: auto;
+}
+
+.separador--fin{
+    grid-column: 1;
+    grid-row: 4;
+}
+/* -----SEPARADOR----- */
+
+/* -------SLIDE------- */
+.slide{
+    width: auto;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../images/utilidad-tres.jpeg);
+    background-size: contain;
+    overflow-x: scroll;
+    gap: 3em;
+}
+
+.slide__imagen{
+    width: auto;
+    height: 60vh;
+}
+/* -------SLIDE------- */
+
+.titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    color: #353534;
+    margin-bottom: 3vw;
+    border: #464646 5px solid;
+    background-image: url(../images/utilidad-uno.jpeg);
+    background-size: 20%;
+}
+
+.titulo--inicio{
+    margin-top: 0.5em;
+}
+
+.info{
+    margin-bottom: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.info__texto{
+    text-align: center;
+    font-size: x-large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.info__imagen--dueños{
+    width: 60vw;
+    height: auto;
+}
+
+.info__imagen--local{
+    width: 50vw;
+    height: auto;
+}
+
+.nov{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5em;
+}
+
+.nov__img{
+    max-width: 80vw;
+    max-height: 70vh;
+} 
+
+.pieDePagina{
+    grid-column: 1;
+    grid-row: 5;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+    gap: 1em;
+}
+
+.pieDePagina__section{
+    display: flex;
+    flex-direction: column;
+}
+
+.pieDePagina__section__titulo{
+    color: #FAAC2E; 
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 0.5em;
+}
+
+
+.pieDePagina i{
+    color: white;
+    font-size: larger;
+    margin-left: 1em;
+}
+
+.pieDePagina__section__item{
+    padding-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    color: #c0ad03;
+    font-size: larger;
+}
+
+.pieDePagina__section__mapa{
+    width: 15rem;
+    height: 15rem;
+    margin-left: 1em;
+}
+
+.pieDePagina__section__email{
+    width: 15rem;
+    height: 1.5rem;
+    margin-left: 1em;
+}
+
+.pieDePagina__section__boton{
+    width: 15rem;
+    height: 1.5rem;
+    margin-left: 1em;
+    font-weight: bold;
+}
+
+.pieDePagina__section__item--especifico{
+    text-decoration: underline;
+}
+.pieDePagina__section__item--wayUP{
+    text-align: right;
+    font-size: 3rem;
+}
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+.layout--contacto{
+    grid-template-rows: 18vh 6vh 65% 6vh 18vh;
+}
+
+.formulario{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border:#c0ad03 solid 5px;
+    background-image: url(../images/utilidad-dos.jpeg);
+    background-size: contain;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+.formulario__titulo{
+    font-size: large;
+    color: rgb(0, 0, 0);
+    border:#c0ad03 solid 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: white;
+    margin-bottom: 1em;
+}
+
+.formulario__item{
+    font-size: medium;
+    color: black;
+    background-color: rgb(243, 208, 7);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.formulario__item--contacto{
+    width: fit-content;
+    align-self: center;
+}
+
+.formulario__input{
+    width: 50%;
+    height: 15%;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario__boton{
+    height: 3em;
+    padding: 10px;
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 10px;
+    background-image: url(../images/utilidad-uno.jpeg);
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+textarea{
+    width: 80vw;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+.layout--carta{
+    grid-template-rows: 18vh 6vh 97% 6vh 18vh;
+}
+
+.articulo{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 2em;
+    gap: 1em;
+}
+
+.articulo__titulo{
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.articulo__texto{
+    border: 8px outset rgba(190, 187, 7, 0.65);
+    border-radius: 35px;
+    padding: 20px;
+    font-size: x-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    text-align: center;
+}
+
+.articulo__imagen{
+    width: 95vw;
+    height: auto;
+}
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+.layout--eventos{
+    grid-template-rows: 18vh 6vh 86% 6vh 18vh;
+}
+
+.eventos{
+    border: black 5px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+
+.eventos__subtitulo{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.eventos__texto{
+    font-size: x-large;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.eventos__img{
+    width: auto;
+    height: 35vh;
+    margin-bottom: 1em;
+}
+
+.eventos__img--even2{
+    width: 80vw;
+    height: auto;
+}
+
+.titulo--comment{
+    margin-bottom: 0;
+}
+
+.comments__section{
+    border: black 5px solid;
+    background-image: url(../images/utilidad-tres.jpeg);
+    background-size: contain;
+}
+
+.cliente{
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    border: black solid 2px;
+    background-color: rgba(255, 255, 255, 0.589);
+}
+
+.comments__texto{
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: #fce810;
+    background: rgba(0, 0, 0, 0.849);
+}
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+.layout--galeria{
+    grid-template-rows: 18vh 6vh 86% 6vh 18vh;
+}
+
+.seccionImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.seccionImg__img{   
+    width: 75vw;
+    height: auto;
+    border: 8px ridge #8ba8c4;
+}
+
+.seccionVid{
+    display: flex;
+    background-image: url(../images/utilidad-4.jpeg);
+    background-size: cover; 
+    justify-content: center;
+    padding: 3em;
+}
+
+video{
+    width: 85vw;
+    height: auto;
+    border: 10px solid transparent;
+    border-image: url(../images/utilidad-tres.jpeg) 30 fill;
+}
+
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+/*                  --------------------MOBILE--------------------                    */
+
+/*                  --------------------MOBILE(>425)--------------------                    */
+@media (min-width: 426px){
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .layout{
+        grid-template-rows: 18vh 6vh 92% 6vh 18vh;
+    }
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .layout--carta{
+        grid-template-rows: 18vh 6vh 97.5% 6vh 18vh;
+    }
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .layout--contacto{
+        grid-template-rows: 18vh 6vh 62% 6vh 18vh;
+    }
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+}
+/*                  --------------------MOBILE(>425)--------------------                    */
+
+
+/*                  --------------------TABLET--------------------                    */
+@media (min-width:768px){
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .layout{
+        grid-template-rows: 15vh 5.5vh 85% 5.5vh 20vh;
+    }
+
+    .encabezado{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 15vh;
+        gap: 10px;
+    }
+
+    .encabezado__logo{
+        margin-top: 0;
+    }
+
+    .encabezado__titulo{
+        width: 100%;
+        font-size: 1.2em;
+        align-self: flex-start;
+        margin-top: 0.9em;
+        margin-right: 2.5em;
+    }
+
+    .encabezado__navBar{
+        width: 55vw;
+        margin-right: 1em;
+        overflow-x: hidden;
+    }
+
+    .encabezado__navBar--button{
+        font-size: small;
+    }
+
+    .info{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .info__texto{
+        margin-bottom: 1em;
+    }
+
+    .info__imagen--dueños{
+        width: 50vw;
+        margin-left: 2em;
+    }
+    
+    .info__imagen--local{
+        width: 40vw;
+    }
+
+    .nov{
+        flex-direction: row;
+        justify-content: space-between;
+        overflow-x: scroll;
+        margin-bottom: 0;
+    }
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .layout--contacto{
+        grid-template-rows: 15vh 5.5vh 65% 5.5vh 20vh;
+    }
+
+    .formulario{
+    border-width: 10px;
+    }
+
+    .formulario__item{
+        font-size: larger;
+    }
+
+    .formulario__titulo{
+        font-size: 1.5em;
+    }
+
+    .formulario__input{
+        width: 25%;
+        height: 10%;
+        font-size: large;
+    }
+
+    textarea{
+        width: 50vw;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .formulario__boton{
+        margin-left: 2%;
+    }
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .layout--galeria{
+        grid-template-rows: 15vh 5.5vh 93% 5.5vh 20vh;
+    }
+
+    .seccionImg{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+    .seccionImg__img{   
+        width: 60vw;
+    }
+
+    .seccionVid{
+        padding: 5em;
+    }
+
+    video{
+        width: 80vw;
+        border: 20px solid transparent;
+        border-image: url(../images/utilidad-tres.jpeg) 30 fill;
+    }
+
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .layout--carta{
+        grid-template-rows: 15vh 5.5vh 98% 5.5vh 20vh;
+    }
+
+    .articulo__imagen{
+        width: 55vw;
+    }
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+}
+/*                  --------------------TABLET--------------------                    */
+
+
+
+/*                  --------------------DESKTOP--------------------                    */
+@media (min-width:1024px){
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+/* -----HEADER----- */
+    .layout{
+        grid-template-rows: 25vh 7vh 85% 7vh 25vh;
+    }
+
+    .encabezado{
+        height: 25vh;
+        align-items: flex-end;
+    }
+
+    .encabezado__logo{
+        height: 15vh;
+        align-self: center;
+    }
+
+    .encabezado__titulo{
+        font-size: 3vh;
+        margin-top: 1.5em;
+    }
+
+    .encabezado__navBar{
+        width: 55vw;
+        display: inline-block;
+        text-align: right;
+        margin-right: 1em;
+    }
+    .encabezado__navBar--button{
+        font-size: medium;
+        display: inline-block;
+    }
+
+    .separador__imagen{
+        width: 2.5em;
+    }
+
+    .slide{
+        height: 80vh;
+        justify-content: space-around;
+    }
+    .slide__imagen{
+        height: 70vh;
+    }
+
+    .titulo{
+        margin-bottom: 0;
+    }
+
+    .nov{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 2em;
+    }
+
+    .nov__img{
+        width: auto;
+        height: 80vh;
+    }
+
+    .pieDePagina{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .pieDePagina__section{
+        margin-bottom: 0;
+    }
+
+    .pieDePagina__section__mapa{
+        margin-bottom: 1em;
+    }
+    
+    .pieDePagina__section__item--wayUP{
+        margin-top: 2em;
+    }
+
+    .pieDePagina__section__titulo{
+        margin-left: 0;
+    }
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .layout--contacto{
+        grid-template-rows: 25vh 7vh 60% 7vh 25vh;
+    }
+
+    .formulario{
+    border-width: 15px;
+    }
+
+    .formulario__item{
+        font-size: x-large;
+    }
+
+    .formulario__titulo{
+        font-size: 2em;
+    }
+
+    .formulario__input{
+        width: 20%;
+        height: 10%;
+        font-size: larger;
+    }
+
+    textarea{
+        width: 30vw;
+        font-size: larger;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .formulario__boton{
+        margin-left: 5%;
+    }
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .layout--galeria{
+        grid-template-rows: 25vh 7vh 80% 7vh 25vh;
+    }
+
+    .seccionImg{
+        display: grid;
+        grid-template-columns: repeat(3, 33,3%);
+        grid-template-rows: 50% 50%;
+        justify-items: center;
+        gap: 1em;
+        margin-bottom: 4em;
+    }
+
+    #tacos{
+        grid-column: 1;
+        grid-row: 1;
+        width: 30vw;
+    }
+
+    #bandeja_de_sushi{
+        grid-column: 2;
+        grid-row: 1;
+        width: 30vw;
+    }
+
+    #mix_de_platos{
+        grid-column: 3;
+        grid-row: 1;
+        width: 30vw;
+    }
+
+    #pieza_de_sushi{
+        grid-column: 1;
+        grid-row: 2;
+        width: 30vw;
+    }
+
+    #cartel_frente{
+        grid-column: 2;
+        grid-row: 2;
+        width: 30vw;
+    }
+
+    #variedad_sushi{
+        grid-column: 3;
+        grid-row: 2;
+        width: 30vw;
+    }
+
+    video{
+        height: 80vh;
+        border: 30px solid transparent;
+        border-image: url(../images/utilidad-tres.jpeg) 30 fill;
+    }
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .layout--carta{
+        grid-template-rows: 25vh 7vh 95% 7vh 25vh;
+    }
+    .articulo{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    .articulo__titulo{
+        width: 100%;
+    }
+
+    .articulo__texto{
+        width: 50%;
+        margin-left: 1em;
+    }
+
+    .articulo__imagen{
+        width: 35vw;
+    }
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .layout--eventos{
+        grid-template-rows: 25vh 7vh 70% 7vh 25vh;
+    }
+
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: 7vh 45% 45%;
+        row-gap: 10px;
+        column-gap: 5px;
+    }
+
+    .titulo--eventos{
+        margin-top: 0;
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        align-self: center;
+    }
+
+    .titulo--comments{
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .eventos--eve1{
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+    
+    .eventos--eve2{
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
+    .eventos{
+        justify-content: space-evenly;
+    }
+    .eventos__img--even2{
+        width: 40vw;
+        height: auto;
+    }
+
+    .comments__section{
+        grid-column: 3;
+        grid-row: 2 / span 3;
+    }
+/*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+}
+/*                  --------------------DESKTOP--------------------                    */
+
+/*                  --------------------DESKTOP(4K)--------------------                    */
+@media (min-width: 1680px){
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .layout{
+        grid-template-rows: 25vh 7vh 85% 7vh 25vh;
+    }
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .layout--carta{
+        grid-template-rows: 25vh 7vh 97% 7vh 25vh;
+    }
+
+    .articulo__titulo{
+        font-size: 3rem;
+    }
+    .articulo__texto{
+        width: 50vw;
+        height: 50vh;
+        font-size: 3rem;
+        padding: 1em;
+    }
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .layout--eventos{
+        grid-template-rows: 25vh 7vh 80% 7vh 25vh;
+    }
+
+    .contenedor{
+        grid-template-rows: 10vh 100vh 100vh;
+    }
+
+    .eventos__img{
+        width: 20vw;
+        height: auto;
+    }
+    .eventos__img--even2{
+        width: 30vw;
+    }
+    
+    .eventos__subtitulo{
+        font-size: 3rem;
+    }
+
+    .eventos__texto{
+        font-size: 2rem;
+    }
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+
+    /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+    .layout--contacto{
+        grid-template-rows: 25vh 7vh 60% 7vh 25vh;
+    }
+    .formulario__titulo{
+        font-size: 3rem;
+    }
+
+    .formulario__item{
+        font-size: 2rem;
+    }
+     /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
+}
