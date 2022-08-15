@@ -20,7 +20,7 @@ a{text-decoration: none;}
 .layout{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 18vh 6vh 89% 6vh 18vh;
+    grid-template-rows: 20vh 6vh 89% 6vh 18vh;
 }
 
 /* -----HEADER----- */
@@ -42,7 +42,6 @@ a{text-decoration: none;}
     height: 10vh;
     margin-top: 1em;
     margin-left: 1em;
-
 }
 
 .encabezado__titulo{
@@ -60,17 +59,24 @@ a{text-decoration: none;}
     align-items: center;
     overflow-x: scroll;
     border: white 5px solid;
+    padding: 0.5em;
+    border-radius: 1em;
+    background-color: #3d3d3d62;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .encabezado__navBar--button{
-    background-color: #FBEA39;
-    border: 2px solid rgb(201, 157, 12);
-    border-radius: 4px;
-    color: black;
+    color: rgb(233, 182, 14);
     font-weight: bold;
     font-size: smaller;
     text-transform: uppercase;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 10px;
+}
+
+.encabezado__navBar--buttonFin{
+    margin-right: 0;
 }
 /* -----HEADER----- */
 
@@ -144,7 +150,8 @@ a{text-decoration: none;}
     text-align: center;
     font-size: x-large;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 1em
+    padding: 1em;
+    color: white;
 }
 
 .info__imagen--dueños{
@@ -241,7 +248,7 @@ a{text-decoration: none;}
 
 /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 .layout--contacto{
-    grid-template-rows: 18vh 6vh 65% 6vh 18vh;
+    grid-template-rows: 20vh 6vh 65% 6vh 18vh;
 }
 
 .formulario{
@@ -310,7 +317,7 @@ textarea{
 
 /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CARTA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 .layout--carta{
-    grid-template-rows: 18vh 6vh 97% 6vh 18vh;
+    grid-template-rows: 20vh 6vh 97% 6vh 18vh;
 }
 
 .articulo{
@@ -321,6 +328,7 @@ textarea{
     align-items: center;
     margin-bottom: 2em;
     gap: 1em;
+    
 }
 
 .articulo__titulo{
@@ -329,6 +337,11 @@ textarea{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     text-decoration: underline;
+    color: white;
+    background-color: rgba(240, 199, 18, 0.527);
+    border-radius: 5px;
+    border: #c0ad03 5px solid;
+    padding: 10px;
 }
 
 .articulo__texto{
@@ -339,6 +352,7 @@ textarea{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: oblique;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.781);
 }
 
 .articulo__imagen{
@@ -349,7 +363,7 @@ textarea{
 
 /*              <<<<<<<<<<<<<<<<<<<<<<<<<<EVENTOS>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 .layout--eventos{
-    grid-template-rows: 18vh 6vh 86% 6vh 18vh;
+    grid-template-rows: 20vh 6vh 86% 6vh 18vh;
 }
 
 .eventos{
@@ -359,6 +373,7 @@ textarea{
     align-items: center;
     gap: 1em;
     margin-bottom: 1em;
+    background-color: rgba(255, 255, 255, 0.753);
 }
 
 
@@ -416,10 +431,10 @@ textarea{
 
 /*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 .layout--galeria{
-    grid-template-rows: 18vh 6vh 86% 6vh 18vh;
+    grid-template-rows: 20vh 6vh 86% 6vh 18vh;
 }
 
-.cuerpo--galeria{
+main{
     background: rgb(0,0,0);
     background: linear-gradient(137deg, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 35%, rgba(130,130,130,1) 67%, rgba(255,255,255,1) 100%);
 }
@@ -512,7 +527,6 @@ video{
     .encabezado__navBar{
         width: 55vw;
         margin-right: 1em;
-        overflow-x: hidden;
     }
 
     .encabezado__navBar--button{
@@ -630,7 +644,7 @@ video{
 
 /* -----HEADER----- */
     .layout{
-        grid-template-rows: 25vh 7vh 85% 7vh 25vh;
+        grid-template-rows: 25vh 7vh 86% 7vh 25vh;
     }
 
     .encabezado{
@@ -649,14 +663,22 @@ video{
     }
 
     .encabezado__navBar{
-        width: 55vw;
-        display: inline-block;
-        text-align: right;
+        width: 60vw;
+        display: flex;
         margin-right: 1em;
+        overflow-x: hidden;
     }
+
     .encabezado__navBar--button{
-        font-size: medium;
-        display: inline-block;
+        font-size: 1rem;
+        transition: 0.5s all  ease-in-out;
+    }
+
+    li .encabezado__navBar--button:hover{
+        font-size: x-large;
+        background-color: rgba(214, 208, 208, 0.534);
+        border-radius: 10px;
+        
     }
 
     .separador__imagen{
@@ -704,15 +726,24 @@ video{
         margin-top: 2em;
     }
 
+    .bi-caret-up:hover{
+        font-size: 4rem;
+        color: #c0ad03;
+    }
+
+    .pieDePagina__section__item--especifico{
+        transition: 0.5s all  ease-in-out;
+    }
+
+    .pieDePagina__section__item--especifico:hover{
+        background-color: rgba(214, 208, 208, 0.534);
+        border-radius: 10px;
+    }
     .pieDePagina__section__titulo{
         margin-left: 0;
     }
 
-    li .encabezado__navBar--button:hover{
-        font-size: x-large;
-        color: rgb(214, 208, 208);
-        
-    }
+
 /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
 /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
@@ -736,6 +767,11 @@ video{
         width: 20%;
         height: 10%;
         font-size: larger;
+        cursor: text;
+    }
+
+    .formulario__input--desplegable{
+        cursor: pointer;
     }
 
     textarea{
@@ -746,6 +782,12 @@ video{
 
     .formulario__boton{
         margin-left: 5%;
+        transition: 1s;
+    }
+
+    .formulario__boton:hover{
+        transform: scale(1.2);
+        cursor: pointer;
     }
 
 /*              <<<<<<<<<<<<<<<<<<<<<<<<<<CONTACTO>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
@@ -753,7 +795,7 @@ video{
 
 /*              <<<<<<<<<<<<<<<<<<<<<<<<<<GALERIA>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
     .layout--galeria{
-        grid-template-rows: 25vh 7vh 80% 7vh 25vh;
+        grid-template-rows: 25vh 7vh 82% 7vh 25vh;
     }
 
     .seccionImg{
@@ -763,6 +805,15 @@ video{
         justify-items: center;
         gap: 1em;
         margin-bottom: 4em;
+    }
+
+    .seccionImg__img{
+        transition: 0.5s cubic-bezier(.62,.18,.88,.53);
+    }
+
+    .seccionImg__img:hover{
+        transform: scale(1.12);
+        z-index: 2;
     }
 
     #tacos{
@@ -821,6 +872,7 @@ video{
 
     .articulo__titulo{
         width: 100%;
+        margin: 0.5em 1em 0;
     }
 
     .articulo__texto{
