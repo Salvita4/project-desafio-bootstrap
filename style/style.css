@@ -158,11 +158,21 @@ body{
     height: auto;
 }
 
+.nov{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 2em;
+    padding-bottom: 1em;
+    object-fit: contain;
+}
 
 .nov__img{
-    min-width: 40vw;
-    min-height: 60vh;
-    margin: 1em;
+    width: auto;
+    height: 75vh;
+    margin-bottom: 1em;
+    object-fit: contain;
 } 
 
 .pieDePagina{
