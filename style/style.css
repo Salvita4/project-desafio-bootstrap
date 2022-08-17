@@ -32,9 +32,8 @@ a{text-decoration: none;}
 }
 
 .encabezado__titulo{
-    display: inline-block;
     color: #FBEA39 ;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
 }
 
@@ -97,10 +96,10 @@ a{text-decoration: none;}
     justify-content: space-between;
     align-items: center;
     background-image: url(../images/utilidad-tres.jpeg);
-    background-size: contain;
+    background-repeat: no-repeat; 
+    background-size: cover;   
     overflow-x: scroll;
     gap: 3em;
-    object-fit: fill;
 }
 
 .slide__imagen{
