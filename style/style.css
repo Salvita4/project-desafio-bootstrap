@@ -145,10 +145,11 @@ body{
 .info__imagen{
     margin-bottom: 1em;
     padding: 1em;
+    object-fit: contain;
 }
 
 .info__imagen--dueños{
-    min-width: 60vw;
+    min-width: 70vw;
     height: auto;
 
 }
