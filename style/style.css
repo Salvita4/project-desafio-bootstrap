@@ -147,13 +147,13 @@ body{
 }
 
 .info__imagen--dueños{
-    width: 60vw;
+    min-width: 60vw;
     height: auto;
 
 }
 
 .info__imagen--local{
-    width: 50vw;
+    min-width: 50vw;
     height: auto;
 }
 
@@ -167,8 +167,8 @@ body{
 }
 
 .nov__img{
-    max-width: 80vw;
-    max-height: 70vh;
+    min-width: 40vw;
+    min-height: 50vh;
 } 
 
 .pieDePagina{
