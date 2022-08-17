@@ -116,6 +116,7 @@ body{
 .titulo{
     font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: xx-large;
+    font-weight: bolder;
     text-align: center;
     color: #353534;
     margin-bottom: 3vw;
@@ -157,18 +158,11 @@ body{
     height: auto;
 }
 
-.nov{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    gap: 5px;
-    padding-bottom: 1em;
-}
 
 .nov__img{
     min-width: 40vw;
-    min-height: 50vh;
+    min-height: 60vh;
+    margin: 1em;
 } 
 
 .pieDePagina{
