@@ -17,27 +17,14 @@ a{text-decoration: none;}
 
 /*              <<<<<<<<<<<<<<<<<<<<<<<<<<INDEX>>>>>>>>>>>>>>>>>>>>>>>>>>>              */
 
-.layout{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 20vh 6vh 89% 6vh 18vh;
-}
 
 /* -----HEADER----- */
 .encabezado{
     background-color: black;
     background-size: contain;
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.cuerpo{
-    grid-column: 1;
-    grid-row: 3;
 }
 
 .encabezado__logo{
-    display: inline-block;
     width: auto;
     height: 10vh;
     margin-top: 1em;
@@ -48,7 +35,7 @@ a{text-decoration: none;}
     display: inline-block;
     color: #FBEA39 ;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .encabezado__navBar{
@@ -62,8 +49,6 @@ a{text-decoration: none;}
     padding: 0.5em;
     border-radius: 1em;
     background-color: #3d3d3d62;
-    margin-left: 1em;
-    margin-right: 1em;
 }
 
 .encabezado__navBar--button{
@@ -107,7 +92,7 @@ a{text-decoration: none;}
 /* -------SLIDE------- */
 .slide{
     width: auto;
-    height: 70vh;
+    height: 65vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,6 +100,7 @@ a{text-decoration: none;}
     background-size: contain;
     overflow-x: scroll;
     gap: 3em;
+    object-fit: fill;
 }
 
 .slide__imagen{
@@ -140,13 +126,11 @@ a{text-decoration: none;}
 
 .info{
     margin-bottom: 4vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
 }
 
 .info__texto{
+    width: auto;
+    height: 75vh;
     text-align: center;
     font-size: x-large;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -154,9 +138,15 @@ a{text-decoration: none;}
     color: white;
 }
 
+.info__imagen{
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
 .info__imagen--dueños{
     width: 60vw;
     height: auto;
+
 }
 
 .info__imagen--local{
@@ -170,7 +160,7 @@ a{text-decoration: none;}
     align-content: center;
     align-items: center;
     gap: 5px;
-    margin-bottom: 5em;
+    padding-bottom: 1em;
 }
 
 .nov__img{
@@ -179,20 +169,14 @@ a{text-decoration: none;}
 } 
 
 .pieDePagina{
-    grid-column: 1;
-    grid-row: 5;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
     background-color: black;
     overflow: hidden;
-    gap: 1em;
 }
 
 .pieDePagina__section{
     display: flex;
     flex-direction: column;
+    margin-bottom: 1em;
 }
 
 .pieDePagina__section__titulo{
@@ -239,6 +223,7 @@ a{text-decoration: none;}
 .pieDePagina__section__item--especifico{
     text-decoration: underline;
 }
+
 .pieDePagina__section__item--wayUP{
     text-align: right;
     font-size: 3rem;
