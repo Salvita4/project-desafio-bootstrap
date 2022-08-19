@@ -155,21 +155,21 @@ body{
 }
 
 .nov{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 2em; */
     padding-bottom: 1em;
     object-fit: contain;
 }
 
 .nov__img{
     width: auto;
-    height: 100vh;
-    margin-bottom: 1em;
+    height: 75vh;
     object-fit: contain;
+    padding: 1em;
 } 
 
 .pieDePagina{
