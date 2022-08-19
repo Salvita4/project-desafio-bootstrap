@@ -155,12 +155,6 @@ body{
 }
 
 .nov{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    gap: 2em; */
     padding-bottom: 1em;
     object-fit: contain;
 }
