@@ -735,8 +735,6 @@ video{
     }
 
     .articulo__texto{
-        width: 50vw;
-        height: 50vh;
         font-size: 3rem;
         padding: 1em;
     }
